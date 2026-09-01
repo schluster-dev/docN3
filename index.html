@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Foto TKA Kelas XII 2026 | SMKN 3 Linggabuana</title>
-    <meta name="description" content="Jadwal resmi pemotretan foto TKA siswa kelas XII SMKN 3 Linggabuana Purwakarta T.P 2026/2027">
+    <title>Daftar Peserta TKA 2026 Kelas XII | SMKN 3 Linggabuana</title>
+    <meta name="description" content="Daftar siswa peserta Tes Kemampuan Akademik (TKA) Tahun 2026 kelas XII SMKN 3 Linggabuana Purwakarta">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,6 +24,7 @@
         .formal-card { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
         .jurusan-header:hover { background-color: #f1f5f9; cursor: pointer; }
         .student-list-container { display: none; }
+        .student-list-container.active { display: block; }
         .student-list-container.active { display: block; animation: slideDown .3s ease-out; }
         @keyframes slideDown { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
         .pdf-page { padding: 40px; background: white; max-width: 1100px; margin: 0 auto; }
@@ -53,7 +54,7 @@
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-s3l-cyan opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-3 w-3 bg-s3l-cyan"></span>
             </span>
-            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Dokumen resmi • GitHub Pages</span>
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Dokumen resmi • Daftar peserta TKA 2026</span>
         </div>
         <div class="flex flex-col sm:flex-row gap-2">
             <div class="relative">
@@ -74,27 +75,35 @@
         <div class="border-b-2 border-slate-200 pb-6 mb-8 text-center">
             <img src="https://i.imgur.com/22oGEF7.png" alt="Kop Surat SMKN 3 Linggabuana" class="w-full h-auto mb-4" onerror="this.style.display='none'">
             <p class="text-base font-bold tracking-wide uppercase">
-                Jadwal Pelaksanaan Pemotretan Foto TKA Siswa Kelas XII // T.P 2026/2027
+                Daftar Siswa Peserta Tes Kemampuan Akademik (TKA) Tahun 2026
+            </p>
+            <p class="text-xs text-slate-500 mt-1 uppercase tracking-wide">
+                Kelas XII SMK Negeri 3 Linggabuana Purwakarta
             </p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             <div class="border border-slate-100 p-5 rounded-xl bg-slate-50/50">
-                <p class="text-[10px] uppercase text-slate-500 font-bold">Hari &amp; Tanggal</p>
-                <p class="text-sm text-s3l-dark font-bold">Selasa, 04 Agustus 2026</p>
+                <p class="text-[10px] uppercase text-slate-500 font-bold">Jenis tes</p>
+                <p class="text-sm text-s3l-dark font-bold">TKA Tahun 2026</p>
             </div>
             <div class="border border-slate-100 p-5 rounded-xl bg-slate-50/50">
-                <p class="text-[10px] uppercase text-slate-500 font-bold">Waktu Operasional</p>
-                <p class="text-sm text-s3l-dark font-bold">08:00 s.d 13:00 WIB</p>
+                <p class="text-[10px] uppercase text-slate-500 font-bold">Satuan pendidikan</p>
+                <p class="text-sm text-s3l-dark font-bold">SMKN 3 Linggabuana</p>
             </div>
             <div class="border border-slate-100 p-5 rounded-xl bg-slate-50/50">
-                <p class="text-[10px] uppercase text-slate-500 font-bold">Total Peserta</p>
+                <p class="text-[10px] uppercase text-slate-500 font-bold">Total peserta</p>
                 <p class="text-sm text-s3l-dark font-bold" id="total-peserta">321 Siswa</p>
             </div>
             <div class="border border-slate-100 p-5 rounded-xl bg-slate-50/50">
-                <p class="text-[10px] uppercase text-slate-500 font-bold">Lokasi</p>
-                <p class="text-sm text-s3l-dark font-bold">SMKN 3 Linggabuana</p>
+                <p class="text-[10px] uppercase text-slate-500 font-bold">Pelaksanaan utama</p>
+                <p class="text-sm text-s3l-dark font-bold">26 Okt – 8 Nov 2026</p>
             </div>
+        </div>
+        <div class="mb-8 text-[11px] text-slate-600 bg-slate-50 border border-slate-100 rounded-xl p-4 leading-relaxed">
+            <p class="font-bold text-s3l-dark mb-1">Linimasa TKA jenjang SMA/SMK/MA 2026 <span class="font-normal text-slate-500">(Kemendikdasmen / BKPDM)</span></p>
+            Pendaftaran 27 Jul–27 Sep • Simulasi 21–27 Sep • Gladi bersih 5–18 Okt • Pelaksanaan utama 26 Okt–8 Nov • Susulan 16–29 Nov • Pengumuman 23 Des 2026.
+            TKA bersifat sukarela dan tidak menentukan kelulusan dari sekolah.
         </div>
 
         <div id="schedule-container" class="space-y-4"></div>
@@ -102,12 +111,12 @@
         <div class="mt-12 pt-10 border-t border-slate-200">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="md:col-span-2 space-y-2 text-xs text-slate-600 leading-relaxed">
-                    <p class="font-bold text-s3l-dark">CATATAN PENTING:</p>
+                    <p class="font-bold text-s3l-dark">CATATAN:</p>
                     <ol class="list-decimal pl-5 space-y-1">
-                        <li>Siswa wajib hadir 15 menit sebelum waktu pemotretan dimulai.</li>
-                        <li>Menggunakan seragam sekolah lengkap, rapi, berdasi dan sesuai ketentuan sekolah (baju putih lengkap dengan atribut linggabuana).</li>
-                        <li>Rambut rapi (cepak) bagi siswa laki-laki dan kerudung dimasukkan bagi siswi perempuan.</li>
-                        <li>Waktu pemotretan bisa berubah sesuai dengan kondisi di lapangan, dimohon stay WA.</li>
+                        <li>Daftar ini merujuk identitas pada Surat Pernyataan Pendaftaran TKA siswa kelas XII.</li>
+                        <li>Peserta TKA SMK adalah siswa kelas akhir yang memiliki NISN aktif terdaftar di Dapodik.</li>
+                        <li>Keikutsertaan TKA bersifat sukarela dan tidak memengaruhi kelulusan dari satuan pendidikan.</li>
+                        <li>Jika ada kekeliruan nama atau NISN, segera hubungi sekolah untuk perbaikan sesuai mekanisme yang ditetapkan.</li>
                     </ol>
                 </div>
                 <div class="text-center text-xs pt-2">
@@ -122,7 +131,7 @@
             </div>
         </div>
         <p class="text-center text-[9px] text-slate-400 uppercase tracking-widest mt-12 no-print">
-            Klik baris jurusan untuk melihat foto dan daftar nama siswa
+            Daftar peserta per konsentrasi keahlian — foto, nama, dan NISN
         </p>
     </div>
 
@@ -131,7 +140,7 @@
    Contoh: fotos/0081935299.jpg
    GitHub Pages akan menampilkan dari URL repo/fotos/NISN.jpg
 */
-const PHOTO_BASE = 'fotos/';
+const PHOTO_BASE = 'https://schluster-dev.github.io/docN3/fotos/';
 const PHOTO_EXT  = '.jpg';
 const PHOTO_MAP  = {};
 
@@ -168,18 +177,31 @@ function studentCard(s) {
     return `
         <div class="p-2 bg-white rounded-lg border border-slate-100 shadow-sm flex items-center gap-3 student-card"
              data-nama="${s.nama.toUpperCase()}" data-nisn="${s.nisn}">
-            <div class="shrink-0 relative overflow-hidden rounded-md border border-slate-200 bg-slate-800">
-                <div class="photo-fallback">${ini}</div>
-                <img src="${src}" alt="${s.nama}" class="photo-frame absolute inset-0"
+            <div class="shrink-0 relative overflow-hidden rounded-md border border-slate-200" style="width:72px;height:96px;background:#0f172a;">
+                <div class="photo-fallback" style="width:72px;height:96px;">${ini}</div>
+                <img src="${src}" alt="${s.nama}"
+                     style="position:absolute;inset:0;width:72px;height:96px;object-fit:cover;object-position:top center;"
                      loading="lazy"
                      onload="this.previousElementSibling.style.display='none'"
-                     onerror="this.style.display='none'">
+                     onerror="tryNextExt(this, '${s.nisn}', this.previousElementSibling)">
             </div>
             <div class="min-w-0">
                 <p class="text-[11px] font-bold text-s3l-dark leading-snug uppercase">${s.nama}</p>
                 <p class="text-[10px] text-slate-500 font-mono mt-0.5">NISN ${s.nisn}</p>
             </div>
         </div>`;
+}
+
+function tryNextExt(img, nisn, fallback) {
+    const exts = ['.jpg', '.JPG', '.jpeg', '.png', '.PNG'];
+    const step = Number(img.dataset.extStep || 0) + 1;
+    img.dataset.extStep = step;
+    if (step < exts.length) {
+        img.src = PHOTO_BASE + nisn + exts[step];
+        return;
+    }
+    img.style.display = 'none';
+    if (fallback) fallback.style.display = 'flex';
 }
 
 const container = document.getElementById('schedule-container');
@@ -191,12 +213,12 @@ schedule.forEach((item, index) => {
         <div class="formal-card rounded-xl overflow-hidden jurusan-block" data-code="${item.code}" data-name="${item.name.toUpperCase()}">
             <div class="p-5 flex justify-between items-center jurusan-header" onclick="toggleJurusan(${index})">
                 <div class="flex items-center gap-5">
-                    <div class="bg-slate-900 p-3 rounded-lg text-white font-mono font-bold text-xs min-w-[70px] text-center">
-                        ${item.time.split(' - ')[0]}
+                    <div class="bg-slate-900 p-3 rounded-lg text-white font-mono font-bold text-xs min-w-[64px] text-center">
+                        ${item.code}
                     </div>
                     <div>
                         <h3 class="text-s3l-dark font-extrabold uppercase tracking-widest text-xs">${item.name}</h3>
-                        <p class="text-[9px] text-slate-500 uppercase mt-1">Konsentrasi: ${item.code} // ${students.length} siswa</p>
+                        <p class="text-[9px] text-slate-500 uppercase mt-1">Konsentrasi keahlian // ${students.length} peserta</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
@@ -204,7 +226,7 @@ schedule.forEach((item, index) => {
                     <i class="fa-solid fa-chevron-down text-slate-400 transition-transform" id="icon-${index}"></i>
                 </div>
             </div>
-            <div id="list-${index}" class="student-list-container border-t border-slate-100 p-6 bg-slate-50/50">
+            <div id="list-${index}" class="student-list-container active border-t border-slate-100 p-6 bg-slate-50/50">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                     ${students.map(studentCard).join('')}
                 </div>
@@ -262,7 +284,7 @@ function generatePDF() {
     toggleAll(true);
     html2pdf().set({
         margin: 10,
-        filename: 'jadwal_foto_TKA_XII_2026_SMKN3L.pdf',
+        filename: 'daftar_peserta_TKA_XII_2026_SMKN3L.pdf',
         image: { type: 'jpeg', quality: 0.95 },
         html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
